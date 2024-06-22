@@ -1,10 +1,6 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_task/controller/profile_controller.dart';
-import 'package:flutter_task/step_one.dart';
 import 'package:get/get.dart';
-import 'package:image_picker/image_picker.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -108,7 +104,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 },
                 child: Center(
                   child: Container(
-                    // width: 152,
                     height: 46,
                     decoration: BoxDecoration(
                       color: Colors.blueAccent,
