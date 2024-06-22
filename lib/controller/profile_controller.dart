@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_task/step_one.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
@@ -16,7 +15,6 @@ class ProfileController extends GetxController {
       Get.snackbar("Error", "Please fill all the fields",
           backgroundColor: Colors.red, colorText: Colors.white);
     }
-    // Implement your login logic here
   }
 
   showImagePickerDialog() {
@@ -50,7 +48,7 @@ class ProfileController extends GetxController {
     final pickedFile = await ImagePicker().pickImage(source: source);
     if (pickedFile != null) {
       profileImage = File(pickedFile.path);
-      update(); // Trigger UI update
+      update();
     }
   }
 }
